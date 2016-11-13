@@ -8,5 +8,6 @@ function install() {
    echo 'cd /tmp/$2/; pacman -U packagename'
 }
 
+pacman -S yajl
 install 'https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=package-query' 'query'
 install 'https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=yaourt' 'yaourt'
