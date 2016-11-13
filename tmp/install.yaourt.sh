@@ -5,7 +5,7 @@ function install() {
    wget $1 -O /tmp/$2/PKGBUILD
    cd /tmp/$2
    makepkg
-   sudo pacman -U "/tmp/$2/$2*.pkg.tar.gz"
+   sudo pacman -U "/tmp/$2/$2*.pkg.tar.xz"
 }
 
 pacman -S yajl fakeroot
