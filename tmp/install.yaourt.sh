@@ -8,6 +8,6 @@ function install() {
    sudo pacman -U "$2*.tar.gz"
 }
 
-pacman -S yajl
+pacman -S yajl fakeroot
 install 'https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=package-query' 'package-query'
 install 'https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=yaourt' 'yaourt'
